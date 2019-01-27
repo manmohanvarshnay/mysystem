@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+#this file install basic dependencies in centos/RHEL7
+
 sudo setenforce 0
 sudo systemctl stop firewalld
 sudo yum -y update
@@ -43,3 +46,7 @@ swapoff -a && swapon -a
 ###################################################### SWITCH TO GUI MODE  ##########################################################################
 sudo systemctl isolate graphical.target
 ###################################################### END OF FILE  #################################################################################
+
+
+
+
