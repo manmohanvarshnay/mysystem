@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 PATHS="/"
 HOSTNAME=$(hostname)
 CRITICAL=98
