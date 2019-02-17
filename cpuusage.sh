@@ -1,14 +1,13 @@
 #!/bin/bash
 
-
 PATHS="/"
 HOSTNAME=$(hostname)
 CRITICAL=98
 WARNING=90
 CRITICALMAIL="manmohanvarshnay@yahoo.com"
 WARNMAIL="manmohanvarshnay@yahoo.com"
-mkdir -p /home/ec2-user/cputilhist
-LOGFILE=/home/ec2-user/cputilhist/cpuusage-`date +%h%d%y`.log
+mkdir -p /var/log/cputilhist
+LOGFILE=/var/log/cputilhist/cpuusage-`date +%h%d%y`.log
 touch $LOGFILE
 for path in $PATHS
 do 
